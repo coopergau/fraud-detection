@@ -9,11 +9,8 @@ The purpose of this project is to explore and compare the performance of differe
 Key Techniques to Showcase:
 
 Handle class imbalance (SMOTE, undersampling, cost-sensitive learning)
-Feature engineering (transaction patterns, time-based features)
 Multiple evaluation metrics (precision, recall, F1, AUC-ROC, AUC-PR)
-Ensemble methods (Random Forest, XGBoost work great here)
 
-Same Stack: Python + scikit-learn + Jupyter, then Streamlit for deployment
 
 1. Load, inspect, clean data 
 2. Exploratory Data Analysis 
@@ -25,3 +22,9 @@ Same Stack: Python + scikit-learn + Jupyter, then Streamlit for deployment
 8. Evaluate with proper metrics 
 9. Feature importance analysis 
 10. Final test set evaluation 
+
+### To do at end
+- make comments nice in notebook (I think you can use md formatting or something)
+- mention the choice of scalers (robust is better for stuff with big outliers i think)
+- check that the xgboost has eval_metric="logloss"
+- choose your own Hyperparameters
