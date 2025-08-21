@@ -1,0 +1,27 @@
+using 
+param_grids = {
+    "logistic regression": {
+        "classifier__C": [0.01, 0.1, 1, 10, 100]
+    },
+    "random forest": {
+        "classifier__n_estimators": [100],
+        "classifier__max_depth": [5, 10, 15, 20, None],
+        "classifier__min_samples_split": [2, 5, 10, 15]
+    },
+    "xgboost": {
+        "classifier__learning_rate": [0.01, 0.05, 0.1, 0.2],
+        "classifier__max_depth": [3, 4, 5, 6],
+        "classifier__n_estimators": [100, 200, 300, 500]
+    }
+}
+scoring="recall"
+                 model        resample  precision    recall        f1
+0  logistic regression        baseline   0.842105  0.551724  0.666667
+1  logistic regression           smote   0.058432  0.908046  0.109798
+2  logistic regression   undersampling   0.034557  0.919540  0.066611
+3  logistic regression  cost-sensitive   0.064815  0.885057  0.120784
+4              xgboost        baseline   0.880000  0.758621  0.814815
+5              xgboost           smote   0.099206  0.862069  0.177936
+6              xgboost   undersampling   0.050768  0.873563  0.095960
+7              xgboost  cost-sensitive   0.143403  0.862069  0.245902
+scoring="f1"
