@@ -24,4 +24,9 @@ scoring="recall"
 5              xgboost           smote   0.099206  0.862069  0.177936
 6              xgboost   undersampling   0.050768  0.873563  0.095960
 7              xgboost  cost-sensitive   0.143403  0.862069  0.245902
-scoring="f1"
+scoring="f1", n_iter=20 
+     model        resample  precision    recall        f1
+0  xgboost        baseline   0.917808  0.770115  0.837500
+1  xgboost           smote   0.813953  0.804598  0.809249
+2  xgboost   undersampling   0.088968  0.862069  0.161290
+3  xgboost  cost-sensitive   0.860759  0.781609  0.819277
