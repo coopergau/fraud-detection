@@ -28,3 +28,4 @@ Multiple evaluation metrics (precision, recall, F1, AUC-ROC, AUC-PR)
 - mention the choice of scalers (robust is better for stuff with big outliers i think)
 - check that the xgboost has eval_metric="logloss"
 - choose your own Hyperparameters
+- what is pos_weight_ratio
