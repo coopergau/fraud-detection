@@ -24,10 +24,6 @@ A baseline model with no resampling method is also included for comparison. XGBo
 
 - Python 3.x  
 - Jupyter Notebook / JupyterLab
-- Install dependencies
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 ## How to Run
 
