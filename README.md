@@ -74,7 +74,9 @@ After hyperparameter tuning, these are the resulting optimal hyperparameters for
     2                       300                      3                       0.01  
     3                       300                      6                       0.10   
     ```
+
     After Tuning the probability threshold the resulting performance on the test data is:
+    
     ```bash
             resample       precision    recall        f1
     0       baseline        0.897959  0.888889  0.893401
