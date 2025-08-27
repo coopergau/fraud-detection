@@ -63,13 +63,13 @@ Three metrics are used to evaluate model performance:
 After hyperparameter tuning, these are the resulting optimal hyperparameters for each resampling method, as well as their performance on the test data (before optimizing the probability threshold):
 
 ```
-        model        resample  precision    recall        f1  \
+     model        resample  precision    recall        f1  \
 0  xgboost        baseline   0.954545  0.848485  0.898396   
 1  xgboost           smote   0.844660  0.878788  0.861386   
 2  xgboost   undersampling   0.034571  0.959596  0.066737   
 3  xgboost  cost-sensitive   0.934066  0.858586  0.894737  
 
-    classifier__n_estimators  classifier__max_depth  classifier__learning_rate  
+   classifier__n_estimators  classifier__max_depth  classifier__learning_rate  
 0                       500                      5                       0.05  
 1                       500                      5                       0.20  
 2                       300                      3                       0.01  
@@ -79,11 +79,11 @@ After hyperparameter tuning, these are the resulting optimal hyperparameters for
 After Tuning the probability threshold the resulting performance on the test data is:
 
 ```
-        resample       precision    recall        f1
-0       baseline        0.897959  0.888889  0.893401
-1          smote        0.956522  0.888889  0.921466
-2  undersampling        0.303754  0.898990  0.454082
-3 cost-sensitive        0.934066  0.858586  0.894737
+        resample  precision    recall        f1
+0       baseline   0.897959  0.888889  0.893401
+1          smote   0.956522  0.888889  0.921466
+2  undersampling   0.303754  0.898990  0.454082
+3 cost-sensitive   0.934066  0.858586  0.894737
 ```
 
 Results: If F1 score is used as the primary evaluation metric, the SMOTE resampling method performed the best, with const-sensitive learning and no resampling not far behind, while undersampling had a much lower score.
