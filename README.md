@@ -86,9 +86,7 @@ After Tuning the probability threshold the resulting performance on the test dat
 3 cost-sensitive   0.934066  0.858586  0.894737
 ```
 
-Results: If F1 score is used as the primary evaluation metric, the SMOTE resampling method performed the best, with const-sensitive learning and no resampling not far behind, while undersampling had a much lower score.
-- Notice that all methods have a high recall of 0.85 - 0.90, and smote and the baseline actually have the same recall, smote just has a higher precision.
-- Despite undersampling's low F1 and precision, it has the highest recall.
+Results: If F1 score is used as the primary evaluation metric, the SMOTE resampling method performed the best, with const-sensitive learning and no resampling not far behind, while undersampling had a much lower score. Notice that all methods have a high recall of 0.85 - 0.90, and smote and the baseline actually have the same recall, smote just has a higher precision. Despite undersampling's low F1 and precision, it has the highest recall.
 
 SMOTE has the best balanced performance, so here are its visual metrics:
 
