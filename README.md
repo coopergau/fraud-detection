@@ -13,6 +13,7 @@ The purpose of this project is to compare how different resampling methods affec
 1. Synthetic Minority Oversampling Technique (SMOTE): SMOTE generates synthetic samples of fraudulent transactions by interpolating between existing fraudulent samples in the dataset. 
 2. Undersampling: Randomly removes non-fraudulent samples to create a more balanced dataset.
 3. Cost-sensitive learning: Does not change the data but assigns a higher penalty for mislabeling fraudulent samples.
+
 A baseline model with no resampling method is also included for comparison. XGBoost is the model of choice due to its strong performance on imbalanced tabular datasets. 
 
 ## Comparison Process
