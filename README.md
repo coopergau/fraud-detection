@@ -62,11 +62,17 @@ Three metrics are used to evaluate model performance:
 
 After hyperparameter tuning, these are the resulting optimal hyperparameters for each resampling method, as well as their performance on the test data (before optimizing the probability threshold):
     ```bash
-        model        resample  precision    recall        f1  classifier__n_estimators  classifier__max_depth  classifier__learning_rate  
-    0  xgboost        baseline   0.954545  0.848485  0.898396                       500                      5                       0.05  
-    1  xgboost           smote   0.844660  0.878788  0.861386                       500                      5                       0.05    
-    2  xgboost   undersampling   0.034571  0.959596  0.066737                       300                      3                       0.01    
-    3  xgboost  cost-sensitive   0.934066  0.858586  0.894737                       300                      6                       0.10    
+         model        resample  precision    recall        f1  \
+    0  xgboost        baseline   0.954545  0.848485  0.898396   
+    1  xgboost           smote   0.844660  0.878788  0.861386   
+    2  xgboost   undersampling   0.034571  0.959596  0.066737   
+    3  xgboost  cost-sensitive   0.934066  0.858586  0.894737   
+
+    classifier__n_estimators  classifier__max_depth  classifier__learning_rate  
+    0                       500                      5                       0.05  
+    1                       500                      5                       0.20  
+    2                       300                      3                       0.01  
+    3                       300                      6                       0.10   
     ```
     After Tuning the probability threshold the resulting performance on the test data is:
     ```bash
