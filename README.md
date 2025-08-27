@@ -67,8 +67,9 @@ After hyperparameter tuning, these are the resulting optimal hyperparameters for
     1  xgboost           smote   0.844660  0.878788  0.861386                       500                      5                       0.05    
     2  xgboost   undersampling   0.034571  0.959596  0.066737                       300                      3                       0.01    
     3  xgboost  cost-sensitive   0.934066  0.858586  0.894737                       300                      6                       0.10    
-
+    ```
     After Tuning the probability threshold the resulting performance on the test data is:
+    ```bash
             resample       precision    recall        f1
     0       baseline        0.897959  0.888889  0.893401
     1          smote        0.956522  0.888889  0.921466
